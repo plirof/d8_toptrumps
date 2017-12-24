@@ -1,0 +1,44 @@
+# Top trumps fields entity routing definition
+top_trumps_fields_entity.settings_tab:
+  route_name: top_trumps_fields_entity.settings
+  title: 'Settings'
+  base_route: top_trumps_fields_entity.settings
+
+entity.top_trumps_fields_entity.canonical:
+  route_name: entity.top_trumps_fields_entity.canonical
+  base_route: entity.top_trumps_fields_entity.canonical
+  title: 'View'
+
+entity.top_trumps_fields_entity.edit_form:
+  route_name: entity.top_trumps_fields_entity.edit_form
+  base_route: entity.top_trumps_fields_entity.canonical
+  title: 'Edit'
+
+entity.top_trumps_fields_entity.delete_form:
+  route_name:  entity.top_trumps_fields_entity.delete_form
+  base_route:  entity.top_trumps_fields_entity.canonical
+  title: Delete
+  weight: 10
+
+# Top trumps cards entity routing definition
+top_trumps_cards_entity.settings_tab:
+  route_name: top_trumps_cards_entity.settings
+  title: 'Settings'
+  base_route: top_trumps_cards_entity.settings
+
+entity.top_trumps_cards_entity.canonical:
+  route_name: entity.top_trumps_cards_entity.canonical
+  base_route: entity.top_trumps_cards_entity.canonical
+  title: 'View'
+
+entity.top_trumps_cards_entity.edit_form:
+  route_name: entity.top_trumps_cards_entity.edit_form
+  base_route: entity.top_trumps_cards_entity.canonical
+  title: 'Edit'
+
+entity.top_trumps_cards_entity.delete_form:
+  route_name:  entity.top_trumps_cards_entity.delete_form
+  base_route:  entity.top_trumps_cards_entity.canonical
+  title: Delete
+  weight: 10
+

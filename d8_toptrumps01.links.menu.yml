@@ -1,0 +1,28 @@
+
+# Top trumps fields entity menu items definition
+entity.top_trumps_fields_entity.collection:
+  title: 'Top trumps fields entity list'
+  route_name: entity.top_trumps_fields_entity.collection
+  description: 'List Top trumps fields entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+top_trumps_fields_entity.admin.structure.settings:
+  title: Top trumps fields entity settings
+  description: 'Configure Top trumps fields entity entities'
+  route_name: top_trumps_fields_entity.settings
+  parent: system.admin_structure
+
+# Top trumps cards entity menu items definition
+entity.top_trumps_cards_entity.collection:
+  title: 'Top trumps cards entity list'
+  route_name: entity.top_trumps_cards_entity.collection
+  description: 'List Top trumps cards entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+top_trumps_cards_entity.admin.structure.settings:
+  title: Top trumps cards entity settings
+  description: 'Configure Top trumps cards entity entities'
+  route_name: top_trumps_cards_entity.settings
+  parent: system.admin_structure

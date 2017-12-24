@@ -1,0 +1,44 @@
+add top trumps fields entity entities:
+  title: 'Create new Top trumps fields entity entities'
+
+administer top trumps fields entity entities:
+  title: 'Administer Top trumps fields entity entities'
+  description: 'Allow to access the administration form to configure Top trumps fields entity entities.'
+  restrict access: true
+
+delete top trumps fields entity entities:
+  title: 'Delete Top trumps fields entity entities'
+
+edit top trumps fields entity entities:
+  title: 'Edit Top trumps fields entity entities'
+
+access top trumps fields entity overview:
+  title: 'Access the Top trumps fields entity overview page'
+
+view published top trumps fields entity entities:
+  title: 'View published Top trumps fields entity entities'
+
+view unpublished top trumps fields entity entities:
+  title: 'View unpublished Top trumps fields entity entities'
+add top trumps cards entity entities:
+  title: 'Create new Top trumps cards entity entities'
+
+administer top trumps cards entity entities:
+  title: 'Administer Top trumps cards entity entities'
+  description: 'Allow to access the administration form to configure Top trumps cards entity entities.'
+  restrict access: true
+
+delete top trumps cards entity entities:
+  title: 'Delete Top trumps cards entity entities'
+
+edit top trumps cards entity entities:
+  title: 'Edit Top trumps cards entity entities'
+
+access top trumps cards entity overview:
+  title: 'Access the Top trumps cards entity overview page'
+
+view published top trumps cards entity entities:
+  title: 'View published Top trumps cards entity entities'
+
+view unpublished top trumps cards entity entities:
+  title: 'View unpublished Top trumps cards entity entities'
