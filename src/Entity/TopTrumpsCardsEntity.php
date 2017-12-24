@@ -215,6 +215,26 @@ class TopTrumpsCardsEntity extends ContentEntityBase implements TopTrumpsCardsEn
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+    $fields['image'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('image path'))
+      ->setDescription(t('The image of the Top trumps cards entity. '))
+      ->setSettings([
+        'max_length' => 150,
+        'text_processing' => 0,
+      ])
+      ->setDefaultValue('')
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'string',
+        'weight' => -4,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -4,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
