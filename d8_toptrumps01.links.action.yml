@@ -8,3 +8,8 @@ entity.top_trumps_cards_entity.add_form:
   title: 'Add Top trumps cards entity'
   appears_on:
     - entity.top_trumps_cards_entity.collection
+entity.top_trumps_category_entity.add_form:
+  route_name: entity.top_trumps_category_entity.add_form
+  title: 'Add Top trumps category entity'
+  appears_on:
+    - entity.top_trumps_category_entity.collection

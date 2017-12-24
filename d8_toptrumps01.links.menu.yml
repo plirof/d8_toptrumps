@@ -26,3 +26,17 @@ top_trumps_cards_entity.admin.structure.settings:
   description: 'Configure Top trumps cards entity entities'
   route_name: top_trumps_cards_entity.settings
   parent: system.admin_structure
+
+# Top trumps category entity menu items definition
+entity.top_trumps_category_entity.collection:
+  title: 'Top trumps category entity list'
+  route_name: entity.top_trumps_category_entity.collection
+  description: 'List Top trumps category entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+top_trumps_category_entity.admin.structure.settings:
+  title: Top trumps category entity settings
+  description: 'Configure Top trumps category entity entities'
+  route_name: top_trumps_category_entity.settings
+  parent: system.admin_structure

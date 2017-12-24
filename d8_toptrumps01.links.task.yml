@@ -42,3 +42,25 @@ entity.top_trumps_cards_entity.delete_form:
   title: Delete
   weight: 10
 
+# Top trumps category entity routing definition
+top_trumps_category_entity.settings_tab:
+  route_name: top_trumps_category_entity.settings
+  title: 'Settings'
+  base_route: top_trumps_category_entity.settings
+
+entity.top_trumps_category_entity.canonical:
+  route_name: entity.top_trumps_category_entity.canonical
+  base_route: entity.top_trumps_category_entity.canonical
+  title: 'View'
+
+entity.top_trumps_category_entity.edit_form:
+  route_name: entity.top_trumps_category_entity.edit_form
+  base_route: entity.top_trumps_category_entity.canonical
+  title: 'Edit'
+
+entity.top_trumps_category_entity.delete_form:
+  route_name:  entity.top_trumps_category_entity.delete_form
+  base_route:  entity.top_trumps_category_entity.canonical
+  title: Delete
+  weight: 10
+

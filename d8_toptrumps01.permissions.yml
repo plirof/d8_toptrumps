@@ -42,3 +42,25 @@ view published top trumps cards entity entities:
 
 view unpublished top trumps cards entity entities:
   title: 'View unpublished Top trumps cards entity entities'
+add top trumps category entity entities:
+  title: 'Create new Top trumps category entity entities'
+
+administer top trumps category entity entities:
+  title: 'Administer Top trumps category entity entities'
+  description: 'Allow to access the administration form to configure Top trumps category entity entities.'
+  restrict access: true
+
+delete top trumps category entity entities:
+  title: 'Delete Top trumps category entity entities'
+
+edit top trumps category entity entities:
+  title: 'Edit Top trumps category entity entities'
+
+access top trumps category entity overview:
+  title: 'Access the Top trumps category entity overview page'
+
+view published top trumps category entity entities:
+  title: 'View published Top trumps category entity entities'
+
+view unpublished top trumps category entity entities:
+  title: 'View unpublished Top trumps category entity entities'
