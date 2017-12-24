@@ -40,7 +40,6 @@ use Drupal\user\UserInterface;
  *     "label" = "name",
  *     "uuid" = "uuid",
  *     "uid" = "user_id",
- *     "langcode" = "langcode",
  *     "status" = "status",
  *   },
  *   links = {
@@ -151,10 +150,10 @@ class TopTrumpsCategoryEntity extends ContentEntityBase implements TopTrumpsCate
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
       ->setDescription(t('The user ID of author of the Top trumps category entity entity.'))
-      ->setRevisionable(TRUE)
+      ->setRevisionable(FALSE)
       ->setSetting('target_type', 'user')
       ->setSetting('handler', 'default')
-      ->setTranslatable(TRUE)
+      ->setTranslatable(FALSE)
       ->setDisplayOptions('view', [
         'label' => 'hidden',
         'type' => 'author',
