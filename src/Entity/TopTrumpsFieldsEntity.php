@@ -193,6 +193,26 @@ class TopTrumpsFieldsEntity extends ContentEntityBase implements TopTrumpsFields
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+    $fields['comparison'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('comparison'))
+      ->setDescription(t('The comparison of the Top trumps fields entity entity.'))
+      ->setSettings([
+        'max_length' => 3,
+        'text_processing' => 0,
+      ])
+      ->setDefaultValue('')
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'string',
+        'weight' => -4,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -4,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
       ->setDescription(t('A boolean indicating whether the Top trumps fields entity is published.'))

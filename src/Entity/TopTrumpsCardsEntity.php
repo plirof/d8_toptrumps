@@ -173,6 +173,7 @@ class TopTrumpsCardsEntity extends ContentEntityBase implements TopTrumpsCardsEn
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
       ->setDescription(t('The name of the Top trumps cards entity entity.'))
@@ -192,6 +193,28 @@ class TopTrumpsCardsEntity extends ContentEntityBase implements TopTrumpsCardsEn
       ])
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
+
+
+    $fields['fields'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('fields values'))
+      ->setDescription(t('The field values of the Top trumps cards entity. Use this form : [21,342,5523,52,666]'))
+      ->setSettings([
+        'max_length' => 50,
+        'text_processing' => 0,
+      ])
+      ->setDefaultValue('')
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'string',
+        'weight' => -4,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -4,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
