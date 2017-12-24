@@ -1,0 +1,14 @@
+{
+  "name": "drupal/d8_toptrumps01",
+  "type": "drupal-module",
+  "description": "Drupal 8 TopTrumps01 test d8",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/d8_toptrumps01",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/d8_toptrumps01",
+    "source": "http://cgit.drupalcode.org/d8_toptrumps01"
+  },
+  "require": { }
+}

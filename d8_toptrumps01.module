@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains d8_toptrumps01.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function d8_toptrumps01_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the d8_toptrumps01 module.
+    case 'help.page.d8_toptrumps01':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Drupal 8 TopTrumps01 test d8') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function d8_toptrumps01_theme() {
+  return [
+    'd8_toptrumps01' => [
+      'render element' => 'children',
+    ],
+  ];
+}

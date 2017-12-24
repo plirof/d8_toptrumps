@@ -1,0 +1,5 @@
+name: d8_toptrumps01
+type: module
+description: Drupal 8 TopTrumps01 test d8
+core: 8.x
+package: toptrumps
