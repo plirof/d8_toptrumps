@@ -30,15 +30,14 @@ class TopTrumpsController extends ControllerBase {
     
     </table>
                   <BR>
-                  <div id="cardgame"></div>
+                  <div id="cardgame">LOADING cardgame</div>
                   <!--<div id="example-table">Loading... sample-tabulator table</div><br> -->
                   
               ',
       //'#allowed_tags' => ['html'],          
       '#attached' => array(
         'library' => array(
-          'jdrupal/jdrupal',
-          'tabulator_workhours/app'
+          'd8_toptrumps01/app_top_trumps'
         )
       )
     );
