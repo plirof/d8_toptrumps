@@ -194,9 +194,9 @@ class TopTrumpsCardsEntity extends ContentEntityBase implements TopTrumpsCardsEn
       ->setDisplayConfigurable('view', TRUE);
 
 
-    $fields['fields'] = BaseFieldDefinition::create('string')
+    $fields['fields_values'] = BaseFieldDefinition::create('string')
       ->setLabel(t('fields values'))
-      ->setDescription(t('The field values of the Top trumps cards entity. Use this form : [21,342,5523,52,666]'))
+      ->setDescription(t('The field values of the Top trumps cards entity. Use this form : [21,342,5523,52,666] - RESTexport MUST display it as "fields"'))
       ->setSettings([
         'max_length' => 50,
         'text_processing' => 0,
