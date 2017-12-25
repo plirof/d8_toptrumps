@@ -1,0 +1,10 @@
+app:
+  css:
+    component:
+      css/jquery.toptrumps.min.css: {}   
+  js:
+    js/jquery.toptrumps.min.js: {}      
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.ui.datepicker  
