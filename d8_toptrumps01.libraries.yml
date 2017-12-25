@@ -3,7 +3,8 @@ app:
     component:
       css/jquery.toptrumps.min.css: {}   
   js:
-    js/jquery.toptrumps.min.js: {}      
+    js/jquery.toptrumps.min.js: {}
+    js/app_top_trumps.js: {}          
   dependencies:
     - core/jquery
     - core/jquery.ui

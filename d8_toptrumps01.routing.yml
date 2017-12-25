@@ -1,0 +1,7 @@
+d8_toptrumps01.hello:
+  path: '/toptrumps'
+  defaults:
+    _controller: '\Drupal\d8_toptrumps01\Controller\TopTrumpsController::get_top_trumps_game'
+    _title: 'top_trumps_game'
+  requirements:
+    _permission: 'access content'
