@@ -15,7 +15,6 @@ console.log("^^^^^^^^^^^^^^^");
             fields_json = data;
         }
     });
-    console.log("######## fields_json="+JSON.parse(fields_json));
     return fields_json;
 })(); 
 
@@ -36,7 +35,6 @@ console.log("^^^^^^^^^^^^^^^");
             cards_json = data;
         }
     });
-    console.log("#######cards_json="+cards_json);
     return cards_json;
 })(); 
 
