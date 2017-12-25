@@ -40,6 +40,7 @@ use Drupal\user\UserInterface;
  *     "label" = "name",
  *     "uuid" = "uuid",
  *     "uid" = "user_id",
+ *     "langcode" = "langcode", 
  *     "status" = "status",
  *   },
  *   links = {
