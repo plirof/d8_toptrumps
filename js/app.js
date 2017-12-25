@@ -1,5 +1,6 @@
 
 jQuery(document).ready(function($) {
+console.log("^^^^^^^^^^^^^^^");
 
  var fields_json = (function () {
     var fields_json = null;
@@ -7,7 +8,7 @@ jQuery(document).ready(function($) {
         'type': 'get',      
         'async': false,
         'global': false,
-        'url': "fields.php",
+        'url': "http://localhost/drupal8test/toptrumps_fields",
         'dataType': "json",
         'success': function (data) {
             //fields_json = data.fields;

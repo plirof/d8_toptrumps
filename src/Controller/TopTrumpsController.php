@@ -37,7 +37,7 @@ class TopTrumpsController extends ControllerBase {
       //'#allowed_tags' => ['html'],          
       '#attached' => array(
         'library' => array(
-          'd8_toptrumps01/app_top_trumps'
+          'd8_toptrumps01/app'
         )
       )
     );
