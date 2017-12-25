@@ -173,6 +173,31 @@ class TopTrumpsFieldsEntity extends ContentEntityBase implements TopTrumpsFields
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+    $fields['category_id'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('category'))
+      ->setDescription(t('The category that this belongs to .'))
+      ->setRevisionable(FALSE)
+      ->setSetting('target_type', 'top_trumps_category_entity')
+      ->setSetting('handler', 'default')
+      ->setTranslatable(FALSE)
+      ->setDisplayOptions('view', [
+        'label' => 'hidden',
+        'type' => 'author',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 5,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'autocomplete_type' => 'tags',
+          'placeholder' => '',
+        ],
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
       ->setDescription(t('The name of the Top trumps fields entity entity.'))
