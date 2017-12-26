@@ -1,6 +1,6 @@
 
 jQuery(document).ready(function($) {
-console.log("^^^^^^^^^^^^^^^");
+console.log("^^^^^^^jQuery(document).ready(function($)^^^^^^^^");
 
  var fields_json = (function () {
     var fields_json = null;
@@ -12,10 +12,11 @@ console.log("^^^^^^^^^^^^^^^");
         'dataType': "json",
         'success': function (data) {
             //fields_json = data.fields;
+            console.log("######## JSON.stringify DATA fields_json="+JSON.stringify(data));
             fields_json = data;
         }
     });
-    console.log("######## fields_json="+JSON.parse(fields_json));
+    console.log("######## fields_json="+JSON.stringify(fields_json));
     return fields_json;
 })(); 
 
@@ -36,11 +37,11 @@ console.log("^^^^^^^^^^^^^^^");
             cards_json = data;
         }
     });
-    console.log("#######cards_json="+cards_json);
+    console.log("#######cards_json="+JSON.stringify(cards_json));
     return cards_json;
 })(); 
 
-console.log(fields_json +"^^^^^^^^^^^^^^^"+cards_json);
+//console.log(fields_json +"^^^^^^^^^^^^^^^"+JSON.stringify(cards_json));
 
 
       $(document).ready(function() {
